@@ -1,0 +1,114 @@
+body {
+    background: #2a2a2a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+main,
+footer {
+    display: block;
+}
+
+.web {
+    margin: 10px auto;
+    width: 99%;
+}
+
+#logo {
+    float: left;
+    height: 135px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px 10px 0 0;
+    /* text-shadow: 1px 1px 1px rgba(0,0,0,.2); */
+}
+
+#judul {
+    background: #ffffff;
+    height: 125px;
+    margin: 0;
+    padding: 10px 0 20px 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0) inset;
+}
+#judul h1 {
+    font-size: 30pt;
+    line-height: 38px;
+    font-weight: 500px;
+}
+#judul h2 {
+    margin-top: 10px;
+    font-size: 22pt;
+    font-weight: 300px;
+    color: rgb(0, 0, 0);
+}
+
+/* Menu Navigasi */
+nav ul {
+    width: 100%;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    box-shadow: 0 0 10px rgb(0, 0, 0) inset;
+}
+nav ul:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+nav ul li {
+    float: left;
+}
+nav ul li:hover {
+    background: gray;
+    border-radius: 5px;
+}
+nav ul li:hover a {
+    color: white;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+/*menghilangkan sub menu */
+nav ul ul {
+    display: none;
+    background: gray;
+    border-radius: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    width: 125px;
+}
+/* memunculkan submenu ketika mouse diarahkan */
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul ul li {
+    float: none;
+    border-bottom: 1px solid gray;
+    position: relative;
+} 
+nav ul ul li a {
+    padding: 10px 20px;
+    color: white;
+}
+nav ul ul li a:hover {
+    background: gray;
+}
+
+/* solusi submenu */
+nav ul ul ul {
+    position: relative;
+    left: 0;
+    top: 0;
+}
