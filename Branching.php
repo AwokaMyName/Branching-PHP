@@ -10,7 +10,7 @@
 40-54.99 = D 1
 0-39.99 = E 0
 */
-$nilai = 80;
+$nilai = 75;
 if ($nilai >= 81 AND $nilai <= 100) {
     echo "Nilai Anda $nilai, mendapat grade <b>A</b> bobot <b>4</b>.";
 } elseif ($nilai >= 78 AND $nilai < 81) {
